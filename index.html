@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Contato</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container-contato">
+    <aside class="contato-lateral">
+      <ul>
+        <li class=""><a href="https://facebook.com/profile" target="_blank">
+            <img src="https://img.icons8.com/?size=35&id=118497&format=png&color=000000" alt="Facebook"> Facebook</a></li>
+
+        <li class=""><a href="https://instaram.com/profile" target="_blank">
+            <img src="https://img.icons8.com/?size=35&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Instagram"> Instagram</a></li>
+
+        <li class=""><a href="https://x.com/profile" target="_blank">
+            <img src="https://img.icons8.com/?size=35&id=ClbD5JTFM7FA&format=png&color=000000" alt="X"> X (Twitter)</a></li>
+
+        <li class=""><a href="https://linkedin.com/profile" target="_blank">
+            <img src="https://img.icons8.com/?size=35&id=13930&format=png&color=000000" alt="LinkedIn"> LinkedIn</a></li>
+
+        <li class=""><a href="mailto:contato@hubgoogle.com.br">
+            <img src="https://img.icons8.com/?size=35&id=OumT4lIcOllS&format=png&color=000000" alt="Email"> contato@hubgoogle.com.br</a></li>
+
+        <li class=""><a href="https://api.whatsapp.com/send?phone=5585982057963">
+            <img src="https://img.icons8.com/?size=35&id=16713&format=png&color=000000" alt="WhatsApp"> +55 85 98205-7963</a></li>
+
+        <li class=""><a href="https://youtube.com/c/profile" target="_blank" >
+            <img src="https://img.icons8.com/?size=35&id=19318&format=png&color=000000" alt="YouTube"> YouTube</a></li>
+      </ul>
+    </aside>
+
+    <main class="formulario-contato">
+      <h1>Fale com a gente</h1>
+      <form action="https://api.staticforms.xyz/submit" method="POST">
+        <input type="hidden" name="accessKey" value="sf_g5876ge9acfl054lcm753gjm">
+        <input type="hidden" name="redirectTo" value="http:/hubgoogle.com.br/obrigado">
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="name" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="assunto">Assunto</label>
+        <select id="assunto" name="subject" required>
+          <option value="">Selecione</option>
+          <option value="sugestaooureclamacao">Sugestão ou Reclamação</option>
+          <option value="Ser um Representante">Ser um Representante</option>
+          <option value="Cadastrar Perfil">Cadastrar Perfil</option>
+          <!-- Adicione outros assuntos aqui -->
+        </select>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="message" rows="6" required></textarea>
+
+        <p><!-- reCAPTCHA integration -->
+  <div class="g-recaptcha" data-sitekey="6LfoTi8rAAAAAJW3Yh0UoQcheUTznge-sEUQ__Gi"></div>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script></p>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
